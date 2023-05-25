@@ -19,7 +19,7 @@ struct ContentView: View {
 //            Text("Hello, world!")
 //        }
 //        .padding()
-        SpriteView(scene: scene)
+        SpriteView(scene: scene, debugOptions: [.showsFPS, .showsNodeCount, .showsPhysics])
             .ignoresSafeArea()
     }
 }

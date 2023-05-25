@@ -40,6 +40,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     enum bitMask: UInt32 {
         case character = 0b1 // 1
         case ground = 0b10 // 2
+        case item = 0b100 // 3
     }
     
     override func didMove(to view: SKView) {
