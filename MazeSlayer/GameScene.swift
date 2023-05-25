@@ -7,6 +7,7 @@
 
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
@@ -28,6 +29,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var heroMovesRight = false
     var heroMovesUp = false
     var heroMovesDown = false
+    
+    var audioPath: URL?
+    var backgroundMusic = AVAudioPlayer()
     
 //    private var lastUpdateTime : TimeInterval = 0
 //    private var label : SKLabelNode?
@@ -58,6 +62,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addSlime()
         addGhost()
         addArrow()
+        
+        audioPath = Bundle.main.url(forResource: "Alexander Nakarada - Adventure Royalty Free Medieval Fantasy Music", withExtension: "mp3")
+        
+        do{
+            backgroundMusic = try AVAudioPlayer(contentsOf: audioPath!)
+        } catch {
+            print("not found")
+        }
+        
+        backgroundMusic.numberOfLoops = 0
+        backgroundMusic.prepareToPlay()
+        backgroundMusic.play()
     }
     
     func addArrow() {
@@ -295,14 +311,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             camera?.position.y = hero.position.y
         }
         
-        left.position.x = cameraPosition.x - 200
-        left.position.y = cameraPosition.y
-        right.position.x = cameraPosition.x - 100
-        right.position.y = cameraPosition.y
-        up.position.x = cameraPosition.x - 150
-        up.position.y = cameraPosition.y + 50
-        down.position.x = cameraPosition.x - 150
-        down.position.y = cameraPosition.y
+        left.position.x = cameraPosition.x - 300
+        left.position.y = cameraPosition.y - 150
+        right.position.x = cameraPosition.x - 200
+        right.position.y = cameraPosition.y - 150
+        up.position.x = cameraPosition.x - 250
+        up.position.y = cameraPosition.y - 100
+        down.position.x = cameraPosition.x - 250
+        down.position.y = cameraPosition.y - 150
     }
 
 }

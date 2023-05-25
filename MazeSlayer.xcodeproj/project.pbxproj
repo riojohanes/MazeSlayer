@@ -18,6 +18,7 @@
 		2F0A30A92A1F4DF100201211 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A30A72A1F4DF100201211 /* Characters.swift */; };
 		2F0A30AA2A1F4DF100201211 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A30A82A1F4DF100201211 /* Items.swift */; };
 		2F0A30AC2A1F4F2800201211 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A30AB2A1F4F2800201211 /* GameViewController.swift */; };
+		2F0A30AF2A1F55C700201211 /* Alexander Nakarada - Adventure Royalty Free Medieval Fantasy Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A30AE2A1F55C700201211 /* Alexander Nakarada - Adventure Royalty Free Medieval Fantasy Music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2F0A30A72A1F4DF100201211 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		2F0A30A82A1F4DF100201211 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 		2F0A30AB2A1F4F2800201211 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2F0A30AE2A1F55C700201211 /* Alexander Nakarada - Adventure Royalty Free Medieval Fantasy Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alexander Nakarada - Adventure Royalty Free Medieval Fantasy Music.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				2F0A30A82A1F4DF100201211 /* Items.swift */,
 				2F0A309E2A1F4CDE00201211 /* GameScene.swift */,
 				2F0A30AB2A1F4F2800201211 /* GameViewController.swift */,
+				2F0A30AD2A1F55B000201211 /* Music */,
 				2F0A30A02A1F4CEA00201211 /* Views */,
 				2F0A30942A1F4BCC00201211 /* Preview Content */,
 			);
@@ -94,6 +97,14 @@
 				2F0A309C2A1F4C9C00201211 /* StartView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2F0A30AD2A1F55B000201211 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A30AE2A1F55C700201211 /* Alexander Nakarada - Adventure Royalty Free Medieval Fantasy Music.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F0A30A62A1F4D3800201211 /* MyTileSet.sks in Resources */,
+				2F0A30AF2A1F55C700201211 /* Alexander Nakarada - Adventure Royalty Free Medieval Fantasy Music.mp3 in Resources */,
 				2F0A30962A1F4BCC00201211 /* Preview Assets.xcassets in Resources */,
 				2F0A30A52A1F4D3800201211 /* GameScene.sks in Resources */,
 				2F0A30932A1F4BCC00201211 /* Assets.xcassets in Resources */,
